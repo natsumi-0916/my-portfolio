@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #e9eff4;
+    color: #5775ac;
+    text-align: center;
+}
+
+h1{
+    font-family: "Arial Black";
+    line-height: 1.2;
+    color: #5775ac;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: "Arial Black";
+    line-height: 1;
+    color: #839fd3;
+    font-size: 2rem;
+}
+  
+/* 上の説明文 */
+.intro {
+    padding: 2rem;
+}
+  
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+  
+.about-works, .description, .software-title, .software {
+    color: #9ea7b4;
+    margin: 0.5rem 0;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 横方向の中央寄せ */
+    text-align: center;   /* テキストも中央寄せ */
+    max-width: 800px;     /* 幅を整える（お好みで調整） */
+    margin: 0 auto;       /* 画面中央に配置 */
+    padding-bottom: 10%;
+}
+
+.movie iframe{
+    width: 80vw;
+    height: 75vh;
+}
+  
+/* 横スクロール用のエリア */
+.scroll-area {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 2rem 0;
+    margin: 0 auto;
+}
+  
+/* 画像を横並びにする */
+.image-row {
+    display: flex;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.image-row02 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    min-width: 100%;
+}
+  
+/* 各画像の設定（サイズバラバラでOK） */
+.image-row img {
+    height: 70vh; /* 高さを揃えることで美しく見える */
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.image-row02 img {
+    height: 70vh; /* 高さを揃えることで美しく見える */
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 横方向の中央寄せ */
+    text-align: center;   /* テキストも中央寄せ */
+    max-width: 800px;     /* 幅を整える（お好みで調整） */
+    margin: 0 auto;       /* 画面中央に配置 */
+    padding-bottom: 10%;
+}
+
+.back-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 横方向の中央寄せ */
+    text-align: center;   /* テキストも中央寄せ */
+    max-width: 800px;     /* 幅を整える（お好みで調整） */
+    margin: 0 auto;       /* 画面中央に配置 */
+    padding-bottom: 10%;
+}
+
+.back-button-text {
+    font-size: 2rem;
+    position: relative;
+    top: -17vh;
+    left: 5vw;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.back-button-img {
+    width: 3vw; /* 画像の幅を調整 */
+    height: auto; /* 縦横比を保持 */
+    position: relative;
+    left: -5vw;
+    transform: rotate(90deg);
+}
+  
+  /* モバイル対応（高さ小さく） */
+  @media (max-width: 768px) {
+    .image-row img {
+      height: 50vh;
+    }
+  }
+  

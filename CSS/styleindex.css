@@ -1,0 +1,499 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #e9eff4;
+}
+
+  
+
+h1{
+    font-family: "Arial Black";
+    line-height: 1.2;
+    color: #5775ac;
+    font-size: 3rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; /* 縦方向の中央揃え */
+    height: 100vh; /* 画面の高さいっぱいに */
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; /* 縦方向の中央揃え */
+    width: 100%; /* 画面幅の85%をコンテンツ幅に */
+    max-width: 100%; /* 最大幅を設定 */
+    gap: 5vw; /* 画像とテキストの間隔を画面幅の5% */
+    gap: 5vw;
+}
+
+.hero-img {
+    width: 70%; /* 画面幅の50%にする */
+    height: 90vh; /* 縦横比を維持 */
+    object-fit: cover;
+    margin-left: 0;
+}
+
+.scroll-indicator {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+}
+
+.hero-text {
+    font-size: 4vw; /* 画面幅に応じてフォントサイズを調整 */
+    text-align: center;
+}
+
+.scroll-content{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+    position: relative;
+    top: 20vh;
+}
+
+.scroll-img {
+    width: auto;
+    height: 20vh; /* 画面の高さの8%に */
+}
+
+.scroll-text {
+    font-size: 1.5vw; /* 画面幅に応じてフォントサイズ */
+    color: #b3b3b3;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    max-width: 1200px;
+    gap: 10vw;
+    margin: auto;
+}
+
+.about-img{
+    width: auto; /* 画面幅の50%にする */
+    height: 80vh; /* 縦横比を維持 */
+    object-fit: cover;
+    position: relative;
+    left: -5vw;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center; /* 中央揃え */
+    text-align: center;
+}
+
+.about-details{
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;
+    color: #b3b3b3;
+}
+
+.about-skills{
+    color: #b3b3b3;
+}
+
+.work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.work-image{
+    position: relative;
+    width: 100%; /* 画面幅の35% */
+    max-width: 600px; /* 最大幅を設定（必要なら調整） */
+    height: auto;
+    left: -7vw;
+}
+
+.work01-front{
+    position: relative;
+    width: 100%;
+}
+
+.work01-text{
+    display: flex; /* 中の要素を並べる */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: flex-start; /* 左寄せ */
+    width: 40vw; /* テキストエリアの幅を画面幅に応じて調整 */
+    max-width: 500px; /* 最大幅を設定 */
+    text-align: left; /* テキストの揃えを左に */
+    position: relative;
+    top: -20vh; /* ここでテキストだけを上に移動 */
+    left: 10vw;
+}
+
+.view-more-container {
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    margin-top: 75vh; /* 上の要素との間隔 */
+}
+
+.work01-view-more {
+    font-size: 2rem;
+    position: relative;
+    top: -3vh;
+    left: -1.8vw;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.view-more-img {
+    width: 3vw; /* 画像の幅を調整 */
+    height: auto; /* 縦横比を保持 */
+    transform: rotate(270deg);
+}
+
+
+.work02{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-content02{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    max-width: 1200px;
+    gap: 3vw;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.work-image02{
+    position: relative;
+    top: -10vh;
+    left: -3vw;
+    width: 100%; /* 画面幅の35% */
+    max-width: 600px; /* 最大幅を設定（必要なら調整） */
+    height: auto;
+}
+
+
+.work02-front{
+    position: relative;
+    left: 0vw;
+    width: 160%;
+    height: 160%;
+    z-index: 2;
+}
+
+.work02-text{
+    display: flex; /* 中の要素を並べる */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: flex-end; /* 左寄せ */
+    width: 60vw; /* テキストエリアの幅を画面幅に応じて調整 */
+    text-align: right; /* テキストの揃えを左に */
+    position: relative;
+    top: -35vh; /* ここでテキストだけを上に移動 */
+    right: 20vw;
+}
+
+.view-more-container02 {
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    margin-top: 55vh; /* 上の要素との間隔 */
+}
+
+.work02-view-more {
+    font-size: 2rem;
+    position: relative;
+    top: -3vh;
+    left: 8.3vw;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.view-more-img02 {
+    width: 3vw; /* 画像の幅を調整 */
+    height: auto; /* 縦横比を保持 */
+    position: relative;
+    left: 10vw;
+    transform: rotate(270deg);
+}
+
+.work03{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-content03{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    max-width: 1200px;
+    gap: 5vw;
+    margin: auto;
+}
+
+.work-image03{
+    position: relative;
+    width: 50%; /* 画面幅の35% */
+    max-width: 600px; /* 最大幅を設定（必要なら調整） */
+    height: auto;
+}
+
+
+
+.work03-front{
+    position: relative;
+    width: 200%;
+    left: -5vw;
+    z-index: 2;
+}
+
+.work03-text{
+    display: flex; /* 中の要素を並べる */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: flex-start; /* 左寄せ */
+    width: 60vw; /* テキストエリアの幅を画面幅に応じて調整 */
+    max-width: 500px; /* 最大幅を設定 */
+    text-align: left; /* テキストの揃えを左に */
+    position: relative;
+    top: -35vh; /* ここでテキストだけを上に移動 */
+    left: 15vw;
+}
+
+.view-more-container03 {
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    margin-top: 75vh; /* 上の要素との間隔 */
+}
+
+.work03-view-more {
+    font-size: 2rem;
+    position: relative;
+    top: -3vh;
+    left: -1.8vw;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.view-more-img03 {
+    width: 3vw; /* 画像の幅を調整 */
+    height: auto; /* 縦横比を保持 */
+    transform: rotate(270deg);
+}
+
+.work04{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-content04{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    gap: 3vw;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+
+.work-image04{
+    position: relative;
+    width: 100%; /* 画面幅の35% */
+    height: auto;
+}
+
+
+.work04-front{
+    position: relative;
+    right: 0vw;
+    width: 150%;
+    height: 150%;
+    z-index: 2;
+}
+
+.work04-text{
+    display: flex; /* 中の要素を並べる */
+    flex-direction: column; /* 縦に並べる */
+    justify-content: center; /* 縦方向の中央揃え */
+    align-items: flex-end; /* 左寄せ */
+    width: 80vw; /* テキストエリアの幅を画面幅に応じて調整 */
+    max-width: 100%; /* 最大幅を設定 */
+    text-align: right; /* テキストの揃えを左に */
+    position: relative;
+    top: -30vh; /* ここでテキストだけを上に移動 */
+    right: 20vw;
+}
+
+.view-more-container04 {
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    margin-top: 65vh; /* 上の要素との間隔 */
+}
+
+.work04-view-more {
+    font-size: 2rem;
+    position: relative;
+    top: -3vh;
+    left: 8.3vw;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.view-more-img04 {
+    width: 3vw; /* 画像の幅を調整 */
+    height: auto; /* 縦横比を保持 */
+    position: relative;
+    left: 10vw;
+    transform: rotate(270deg);
+}
+
+/* Contact セクション */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* フォームのコンテナ */
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 85%;
+    max-width: 1200px;
+    gap: 5vw;
+    margin: auto;
+}
+
+/* Contact 見出し */
+.contact-title {
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+    text-align: left;
+    flex-shrink: 0;
+    white-space: nowrap;
+    margin-top: 2vh; /* ← Nameと高さを合わせる */
+}
+
+/* フォーム全体 */
+form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 45vw;
+}
+
+/* 各入力フィールドのスタイル */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ラベルを左揃え */
+    width: 100%; /* 親要素に揃える */
+}
+
+label {
+    font-size: 1.5vw;
+    margin-bottom: 0.5vh;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5vh;
+    border: 0.15vw solid #ccc;
+    border-radius: 0.5vw;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 15vh;
+    resize: none;
+}
+
+/* 送信ボタン */
+.send-button {
+    background: #5775ac;
+    border: none;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    color: #f0f4f7;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-top: 3vh;
+    width: 40%;
+    border-radius: 3px;
+    padding: 1vh 2vw;
+    align-self: center;
+}
+
+.send-button:hover {
+    color: #305a99;
+}
+
+/* 📱 レスポンシブ対応 */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 3vh;
+    }
+
+    .contact-title {
+        text-align: center;
+        margin-top: 0; /* スマホでは余計な高さ調整をなくす */
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    form {
+        width: 80vw;
+        max-width: 90vw;
+    }
+
+    .send-button {
+        align-self: center;
+    }
+}
