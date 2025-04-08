@@ -433,6 +433,7 @@ form {
     flex-direction: column;
     align-items: flex-start; /* ラベルを左揃え */
     width: 100%; /* 親要素に揃える */
+    color: #b3b3b3;
 }
 
 label {
